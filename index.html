@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Profile</title>
+  <link rel="icon" href="img\favicon.ico">
+  <style>
+    /* ここから下がCSS記載欄 */
+    html{font-size:100%;max-width:1920px;}
+    li{list-style:none;} body{color:#383e45;font-size:0.9rem;}
+    /*-----この下URLの下線を消すコード-----*/
+    a{text-decoration: none;color:black;}
+    /*--------------------------------------*/
+    #header{display:flex;align-items:center;justify-content:space-between;height:60px;}
+    #header ul{display:flex;}#header li{margin-left:30px;margin-right:20px;}
+    .header-class{margin:0 auto;text-align:center;max-width:960px;}
+    #header img{width:150px;margin-left:20px;}
+    #mainpicture{max-width:1920px;width:100%;height:600px;object-fit: cover;}
+    .section-title{border-bottom:1px solid #383e45;display:inline-block;}
+    main{text-align:center;}
+    .bicycle-list{justify-content:space-between;display:flex;}
+    .bicycle-imgtext{text-align:center;width:30%;}
+    .bicycle-img{width:100%;height:auto;}
+    footer{text-align:center;font-size:10px;margin-top:70px;}
+    .about-content img{border-radius:50%;width:100px;height:100px;margin-right:30px;}
+    .about-content{display:flex;align-items:center;justify-content:center;}
+    .about-text{text-align:left;} 
+    #about{margin-top:50px;}
+    #about h2{font-size:32px;margin-bottom:60px;}
+    #bicycle{margin-top:50px;}
+    #bicycle h2{font-size:32px;margin-bottom:60px;}
+      /*ここから下はwidth600PX以下の場合のcss*/
+    @media (max-width:600px){
+      /*-------about用css-------*/
+      #about .about-content{flex-direction:column;}
+      .aboutpicture{height: calc(100vh - 60px);}
+      #about img{ margin-right:0;}
+      br{display:none;}
+      .about-text{width: calc(100vw - 120px);}
+      /*----------------------------*/
+      /*------bicycle用css------*/
+      .bicycle-list{flex-direction:column;}
+      .bicycle-imgtext{width:100%;margin-bottom:15px;}
+      .bicycle-imgtext img{object-fit:cover;width:calc(100% - 20px);}
+      }
+      
+      /*----------------------------*/
+      /*ここまでwidth600PX以下の場合のcss*/
+    /* ここまでCSS記載欄 */
+  </style>  
+</head>
+   <body>
+     <header id="header" class="header-class">
+        <h1 id="header-logo" ><img src="img\logo.svg" alt="header-logo.Profile"></h1>
+        <ul>
+          <li class="header-list"> <a href="#about">About</a></li>
+          <li class="header-list"> <a href="#bicycle">Bicycle</a></li>
+        </ul>
+     </header>
+     <main>
+        <img  class="aboutpicture" src="img/mainvisual.jpg" alt="mainpicture" id="mainpicture">
+        <section id="about">
+           <h2 class="section-title">About</h2>        
+              <div class="about-content"><img src="img/about.jpg" alt="about-picture">            
+              <div class="about-text">  
+                 <h4>KAKERU MIYAICHI</h4>                      
+                 <p>テキストテキストテキストテキストテキストテキストテキスト<br>
+                    テキストテキストテキストテキストテキストテキストテキスト<br>
+                    テキストテキストテキストテキストテキストテキストテキスト
+                  </p>  
+               </div>          
+               </div>
+        </section>
+        <section id="bicycle">
+           <h2 class="section-title">Bicycle</h2>
+        <div class="bicycle-list">
+            <div class="bicycle-imgtext">
+               <img src="img/bicycle1.jpg" class="bicycle-img">
+               <h3 class="bicycle-subtitle">タイトルタイトル</h3>
+               <p>テキストテキストテキスト</p>
+            </div>
+            <div class="bicycle-imgtext">
+               <img src="img/bicycle2.jpg" class="bicycle-img">
+               <h3 class="bicycle-subtitle">タイトルタイトル</h3>
+               <p>テキストテキストテキスト</p>
+            </div>
+            <div class="bicycle-imgtext">
+               <img src="img/bicycle3.jpg" class="bicycle-img">
+               <h3 class="bicycle-subtitle">タイトルタイトル</h3>
+               <p>テキストテキストテキスト</p>
+            </div>
+        </div>
+         </section>
+     </main>
+     <footer>
+        <p>&copy; 2020Profile</p>
+     </footer>
+   </body>
+</html>
