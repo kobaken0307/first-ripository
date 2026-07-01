@@ -1,3 +1,5 @@
+console.log("js読み込まれているよ");
+
 const links = document.querySelectorAll('a[href^="#"]');
 
 links.forEach(function (link) {
