@@ -100,7 +100,11 @@
         <p>&copy; 2020Profile</p>
      </footer>
     <script>
-      alert("JS動いてる");
+     const fadeElements = document.querySelectorAll(".fade");
+
+  fadeElements.forEach(function(element){
+    element.classList.add("show");
+  });
     </script>
    </body>
 </html>
